@@ -1,0 +1,25 @@
+.custom-tabs .ant-tabs-tab-active {
+    @apply  text-black; /* Sử dụng Tailwind để áp dụng màu */
+}
+.custom-tabs .ant-tabs {
+    border: none;
+    
+    /* Ẩn border tổng */
+}
+.custom-tabs .ant-tabs-tab {
+    @apply bg-transparent text-black; /* Màu nền và chữ cho tab không được chọn */
+}
+.custom-tabs .ant-tabs-tab:target {
+    @apply bg-black text-black !important ;
+}
+
+
+.custom-tabs .ant-tabs-tab:hover {
+    @apply  text-Neutral-300; /* Màu nền khi hover */
+}
+.custom-tabs .ant-tabs-tab {
+    @apply border-none; /* Ẩn border cho tab không được chọn */
+}
+.custom-tabs .ant-tabs:active {
+    
+}

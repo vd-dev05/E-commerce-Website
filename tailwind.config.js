@@ -9,6 +9,11 @@ export default {
       fontFamily: {
         be: ['Be Vietnam Pro', 'sans-serif'],
       },
+      backgroundColor:{
+        inputSearch: '#EFF0F6',
+        sub:"#DB4444"
+      },
+
       textColor: {
         // custom color
         Neutral: {
