@@ -7,3 +7,32 @@
     padding: 0;
     box-sizing: border-box;
 }
+@keyframes pull-from-right {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(-10%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.pull-from-right {
+    animation: pull-from-right 5s ease forwards;
+    animation-fill-mode: forwards; /* Giữ trạng thái cuối cùng */
+}   
+.error-message {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 6s ease, transform 0.5s ease;
+}
+
+.error-message.show {
+    opacity: 1;
+    transform: translateX(0);
+}

@@ -11,19 +11,23 @@ const HomeAccount = () => {
 
     return (
         <div>
-            <div className="flex">
+            <div className='w-full'>
+                <div className="flex items-center">
+                    <div className='h-[781px]'>
+
+                    <img 
+                    className='-translate-x-[121px] '
+                    src="/src/assets/images/SignUpbaner.png" alt="Signup Banner" />
+                    </div>
                 <div>
-                    <img src="/src/assets/images/SignUpbaner.png" alt="Signup Banner" />
-                </div>
-                <div>
-                    {isSignin && <Signin />}
+                    {/* {isSignin && <Signin />} */}
                     {isSignup && <Signup />}
                     {!isSignin && !isSignup && (
                         <div>
-                            <Link to="/account/signup" className="text-inherit">Sign Up</Link>
-                            <Link to="/account/signin" className="text-inherit">Sign In</Link>
+                            <Signin />
                         </div>
                     )}
+                </div>
                 </div>
             </div>
         </div>

@@ -4,6 +4,7 @@ import Signup from "./components/dasboard/Signup"
 import Signin from "./components/dasboard/Signin"
 import HomeAccount from "./components/dasboard/HomeAccount"
 import Header from "./components/Header"
+import Footer from "./components/Footer"
 function App() {
   return (
 
@@ -18,6 +19,7 @@ function App() {
         </Route>
 
       </Routes>
+      <Footer/>
     </div>
 
   )
